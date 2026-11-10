@@ -1,0 +1,22 @@
+{
+  "tours": [
+    {
+      "id": "highlights",
+      "name": "Campus Highlights",
+      "description": "The must-see spots at the heart of the Allendale campus.",
+      "stops": ["kirkhof", "library", "carillon", "zumberge-pond", "kindschi", "mackinac"]
+    },
+    {
+      "id": "academics",
+      "name": "Academic Buildings",
+      "description": "Where classes, labs, and performances happen.",
+      "stops": ["pac", "library", "kindschi", "mackinac"]
+    },
+    {
+      "id": "laker-life",
+      "name": "Laker Life",
+      "description": "Student life, from the student union to game day.",
+      "stops": ["kirkhof", "carillon", "lubbers"]
+    }
+  ]
+}

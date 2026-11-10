@@ -1,0 +1,69 @@
+{
+  "_note": "Coordinates are approximate starter values — verify each against Apple Maps before release.",
+  "pois": [
+    {
+      "id": "carillon",
+      "name": "Cook Carillon Tower",
+      "category": "landmark",
+      "latitude": 42.9633,
+      "longitude": -85.8888,
+      "description": "The iconic bell tower at the heart of the Allendale campus. The Cook Carillon Tower is a 10-story carillon-clock tower at the center of Grand Valley State University's Allendale campus. It was built in 1994 and named for Peter C. and Pat Cook, whose donations helped fund it. The tower holds 48 bronze bells cast by the Royal Eijsbouts foundry in the Netherlands. They range from about 3,000 pounds down to just 14 pounds. The carillon chimes every quarter-hour using the Whittington chimes on a computerized system, and it plays the alma mater, \"Hail to Thee, Grand Valley,\" after the noon chimes. A carillonneur can also play the bells live from a keyboard inside the tower. GVSU has a second carillon, the Beckering Family Carillon Tower, on its Pew campus in Grand Rapids. Its carillon bells play daily and it's a popular meeting spot."
+    },
+    {
+      "id": "kirkhof",
+      "name": "Kirkhof Center",
+      "category": "student-life",
+      "latitude": 42.9622,
+      "longitude": -85.8907,
+      "description": "The Russel H. Kirkhof Center is the student union on GVSU's Allendale campus. It opened in 1974 as the “Campus Center” and took its current name in 1984.\n\nThe main level has the 2020 Information Desk, Panda Express, a convenience store and coffee shop, and billiards. It also houses the LGBT Resource Center, the Office of Multicultural Affairs, the Women's Center, and the Office of Student Life.\n\nThe second level is mostly meeting and conference space, including the Grand River Room and the Pere Marquette Room.\n\nThe lower level holds student media: the Grand Valley Lanthorn newspaper, WCKS student radio, and the Grand Valley TV studio. It also has the Promotions Office, GVSU E-Sports center, dining rooms, and the Replenish Food Pantry."
+    },
+    {
+      "id": "library",
+      "name": "Mary Idema Pew Library",
+      "category": "academic",
+      "latitude": 42.9620,
+      "longitude": -85.8885,
+      "description": "The main library, with study spaces, a knowledge market for tutoring help, and a café."
+    },
+    {
+      "id": "zumberge-pond",
+      "name": "Zumberge Pond",
+      "category": "landmark",
+      "latitude": 42.9640,
+      "longitude": -85.8878,
+      "description": "A scenic pond in the center of campus, surrounded by walking paths."
+    },
+    {
+      "id": "mackinac",
+      "name": "Mackinac Hall",
+      "category": "academic",
+      "latitude": 42.9662,
+      "longitude": -85.8868,
+      "description": "A large classroom building housing many general education courses."
+    },
+    {
+      "id": "kindschi",
+      "name": "Kindschi Hall of Science",
+      "category": "academic",
+      "latitude": 42.9652,
+      "longitude": -85.8856,
+      "description": "Home to science labs and classrooms, with a sustainable design and a greenhouse."
+    },
+    {
+      "id": "pac",
+      "name": "Performing Arts Center",
+      "category": "academic",
+      "latitude": 42.9614,
+      "longitude": -85.8860,
+      "description": "Home to music, theatre, and dance, with performance halls that host concerts and productions."
+    },
+    {
+      "id": "lubbers",
+      "name": "Lubbers Stadium",
+      "category": "athletics",
+      "latitude": 42.9589,
+      "longitude": -85.8917,
+      "description": "Home of Laker football."
+    }
+  ]
+}

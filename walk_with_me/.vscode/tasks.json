@@ -1,0 +1,11 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Open iOS Simulator",
+      "type": "shell",
+      "command": "xcrun simctl boot 564EA466-2C7D-439F-B20E-89848D1669AA 2>/dev/null; open -b com.apple.dt.Devices",
+      "presentation": { "reveal": "silent" }
+    }
+  ]
+}

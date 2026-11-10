@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Walk With Me (iPhone 18 Pro)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "deviceId": "564EA466-2C7D-439F-B20E-89848D1669AA",
+      "preLaunchTask": "Open iOS Simulator"
+    }
+  ]
+}

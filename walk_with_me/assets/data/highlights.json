@@ -1,0 +1,24 @@
+{
+  "_note": "Things to point out while walking between stops. Fields: id, title, text, latitude, longitude, optional category (fact | tradition | photo-spot | ...), optional radius in meters (default 35), optional poi (a POI id, adds a 'More' button). Coordinates are approximate — verify against Apple Maps.",
+  "highlights": [
+    {
+      "id": "little-mac-bridge",
+      "title": "Little Mac Bridge",
+      "text": "Students and organizations paint messages on this bridge, so it's always changing. See what's on it today!",
+      "category": "tradition",
+      "latitude": 42.9650,
+      "longitude": -85.8925,
+      "radius": 40
+    },
+    {
+      "id": "pond-photo-spot",
+      "title": "Photo spot: Zumberge Pond",
+      "text": "Stand on the pond's edge facing the Carillon for one of the most photographed views on campus.",
+      "category": "photo-spot",
+      "latitude": 42.9637,
+      "longitude": -85.8883,
+      "radius": 30,
+      "poi": "zumberge-pond"
+    }
+  ]
+}
