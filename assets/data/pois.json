@@ -15,7 +15,7 @@
       "category": "student-life",
       "latitude": 42.962791,
       "longitude": -85.888571,
-      "description": "The Russel H. Kirkhof Center is the student union on GVSU's Allendale campus. It opened in 1974 as the “Campus Center” and took its current name in 1984.\n\nThe main level has the 2020 Information Desk, Panda Express, a convenience store and coffee shop, and billiards. It also houses the LGBT Resource Center, the Office of Multicultural Affairs, the Women's Center, and the Office of Student Life.\n\nThe second level is mostly meeting and conference space, including the Grand River Room and the Pere Marquette Room.\n\nThe lower level holds student media: the Grand Valley Lanthorn newspaper, WCKS student radio, and the Grand Valley TV studio. It also has the Promotions Office, GVSU E-Sports center, dining rooms, and the Replenish Food Pantry."
+      "description": "The Russel H. Kirkhof Center is the student union on GVSU's Allendale campus. It opened in 1974 as the “Campus Center” and took its current name in 1984.\n\nThe main level has the 2020 Information Desk, Panda Express, a convenience store and coffee shop, and billiards. It also houses the LGBT Resource Center, the Office of Multicultural Affairs, the Women's Center, and the Office of Student Life.\n\nThe second level is mostly meeting and conference space, including the Grand River Room and the Pere Marquette Room.\n\nThe lower level holds student media: the Grand Valley Lanthorn newspaper, WCKS student radio, and the Grand Valley TV studio. It also has the Promotions Office, GVSU E-Sports center, Military and Veterans resource center, dining rooms, and the Replenish Food Pantry."
     },
     {
       "id": "library",
@@ -64,6 +64,30 @@
       "latitude": 42.969109,
       "longitude": -85.894704,
       "description": "Home of Laker football."
+    },
+    {
+      "id": "coming-soon",
+      "name": "Coming Soon",
+      "category": "coming-soon",
+      "latitude": 0,
+      "longitude": 0,
+      "description": "This stop is a placeholder for a future point of interest."
+    },
+    {
+      "id": "coming-soon-2",
+      "name": "Coming Soon 2",
+      "category": "coming-soon",
+      "latitude": 0,
+      "longitude": 0,
+      "description": "This stop is a placeholder for a future point of interest."
+    },
+    {
+      "id": "coming-soon-3",
+      "name": "Coming Soon 3",
+      "category": "coming-soon",
+      "latitude": 0,
+      "longitude": 0,
+      "description": "This stop is a placeholder for a future point of interest."
     }
   ]
 }

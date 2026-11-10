@@ -17,6 +17,12 @@
       "name": "Laker Life",
       "description": "Student life, from the student union to game day.",
       "stops": ["kirkhof", "carillon", "lubbers"]
+    },
+    {
+      "id": "sculpture-tour",
+      "name": "Sculpture Tour",
+      "description": "A tour of the public art on campus.",
+      "stops": ["coming-soon"]
     }
   ]
 }
