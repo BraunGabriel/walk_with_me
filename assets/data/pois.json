@@ -5,56 +5,56 @@
       "id": "carillon",
       "name": "Cook Carillon Tower",
       "category": "landmark",
-      "latitude": 42.9633,
-      "longitude": -85.8888,
+      "latitude": 42.963451,
+      "longitude": -85.88859,
       "description": "The iconic bell tower at the heart of the Allendale campus. The Cook Carillon Tower is a 10-story carillon-clock tower at the center of Grand Valley State University's Allendale campus. It was built in 1994 and named for Peter C. and Pat Cook, whose donations helped fund it. The tower holds 48 bronze bells cast by the Royal Eijsbouts foundry in the Netherlands. They range from about 3,000 pounds down to just 14 pounds. The carillon chimes every quarter-hour using the Whittington chimes on a computerized system, and it plays the alma mater, \"Hail to Thee, Grand Valley,\" after the noon chimes. A carillonneur can also play the bells live from a keyboard inside the tower. GVSU has a second carillon, the Beckering Family Carillon Tower, on its Pew campus in Grand Rapids. Its carillon bells play daily and it's a popular meeting spot."
     },
     {
       "id": "kirkhof",
       "name": "Kirkhof Center",
       "category": "student-life",
-      "latitude": 42.9622,
-      "longitude": -85.8907,
+      "latitude": 42.962791,
+      "longitude": -85.888571,
       "description": "The Russel H. Kirkhof Center is the student union on GVSU's Allendale campus. It opened in 1974 as the “Campus Center” and took its current name in 1984.\n\nThe main level has the 2020 Information Desk, Panda Express, a convenience store and coffee shop, and billiards. It also houses the LGBT Resource Center, the Office of Multicultural Affairs, the Women's Center, and the Office of Student Life.\n\nThe second level is mostly meeting and conference space, including the Grand River Room and the Pere Marquette Room.\n\nThe lower level holds student media: the Grand Valley Lanthorn newspaper, WCKS student radio, and the Grand Valley TV studio. It also has the Promotions Office, GVSU E-Sports center, dining rooms, and the Replenish Food Pantry."
     },
     {
       "id": "library",
       "name": "Mary Idema Pew Library",
       "category": "academic",
-      "latitude": 42.9620,
-      "longitude": -85.8885,
+      "latitude": 42.96287,
+      "longitude": -85.889687,
       "description": "The Mary Idema Pew Library is GVSU's main library on the Allendale campus, located near the Cook Carillon Tower. It's named for Mary Idema Pew and her family in recognition of their generous support of the university's capital campaigns. The library offers the Knowledge Market for peer help, a Digital Creator Lab, and study rooms. Its book collection is split between open shelves and an automated storage and retrieval system (ASRS) holding hundreds of thousands of books. It also has the GV Brew café. With late hours, plenty of quiet and group study space, and coffee on hand, it's one of the most popular places on campus for students to study."
     },
     {
       "id": "zumberge-hall",
       "name": "Zumberge Hall",
       "category": "landmark",
-      "latitude": 42.9640,
-      "longitude": -85.8878,
+      "latitude": 42.962904,
+      "longitude": -85.886825,
       "description": "James H. Zumberge Hall began as GVSU's original library, opening in 1969 and named for the university's first president, James H. Zumberge. It sits beside Zumberge Pond on the Allendale campus. Today it serves as the main administration building on the Allendale campus, bringing together about 15 university departments that used to be spread out. The building earned LEED Silver certification for its energy-efficient and sustainable design. Near the building's northwest corner is the Zumberge Garden, dedicated in 2014 in memory of Marilyn Zumberge, the president's wife. It overlooks the pond and the Kirkhof Center."
     },
     {
       "id": "mackinac",
       "name": "Mackinac Hall",
       "category": "academic",
-      "latitude": 42.9662,
-      "longitude": -85.8868,
+      "latitude": 42.966569,
+      "longitude": -85.886848,
       "description": "A large classroom building housing many general education courses."
     },
     {
       "id": "kindschi",
       "name": "Kindschi Hall of Science",
       "category": "academic",
-      "latitude": 42.9652,
-      "longitude": -85.8856,
+      "latitude": 42.965949,
+      "longitude": -85.889186,
       "description": "Home to science labs and classrooms, with a sustainable design and a greenhouse."
     },
     {
       "id": "pac",
       "name": "Performing Arts Center",
       "category": "academic",
-      "latitude": 42.9614,
-      "longitude": -85.8860,
+      "latitude": 42.961813,
+      "longitude": -85.888206,
       "description": "Home to music, theatre, and dance, with performance halls that host concerts and productions."
     },
     {
