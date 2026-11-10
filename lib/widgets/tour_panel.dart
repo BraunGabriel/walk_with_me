@@ -12,10 +12,12 @@ class TourPanel extends StatelessWidget {
     required this.distanceMeters,
     this.arrived = false,
     this.rerouting = false,
+    this.speaking = false,
     required this.onPrevious,
     required this.onNext,
     required this.onDetails,
     required this.onDirections,
+    required this.onListen,
     required this.onEnd,
   });
 
@@ -29,10 +31,16 @@ class TourPanel extends StatelessWidget {
 
   /// A new route is being fetched because the walker left the old one.
   final bool rerouting;
+
+  /// The current stop's description is being read aloud.
+  final bool speaking;
   final VoidCallback onPrevious;
   final VoidCallback onNext;
   final VoidCallback onDetails;
   final VoidCallback onDirections;
+
+  /// Reads the current stop aloud, or stops if already [speaking].
+  final VoidCallback onListen;
   final VoidCallback onEnd;
 
   @override
@@ -97,8 +105,13 @@ class TourPanel extends StatelessWidget {
               else if (distance != null)
                 Text(formatWalk(distance), style: theme.textTheme.bodyMedium),
               const SizedBox(height: 8),
-              Row(
+              Wrap(
                 children: [
+                  TextButton.icon(
+                    onPressed: onListen,
+                    icon: Icon(speaking ? Icons.stop_circle : Icons.volume_up),
+                    label: Text(speaking ? 'Stop' : 'Listen'),
+                  ),
                   TextButton.icon(
                     onPressed: onDetails,
                     icon: const Icon(Icons.info_outline),

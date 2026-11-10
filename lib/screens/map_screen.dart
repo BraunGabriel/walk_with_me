@@ -15,6 +15,7 @@ import '../models/walking_route.dart';
 import '../services/directions_service.dart';
 import '../services/highlight_tracker.dart';
 import '../services/location_service.dart';
+import '../services/narration_service.dart';
 import '../services/route_follower.dart';
 import '../utils/geo.dart';
 import '../widgets/along_the_way_card.dart';
@@ -54,6 +55,10 @@ class _MapScreenState extends State<MapScreen> {
   final _locationService = LocationService();
   final _directions = DirectionsService();
   final _highlightTracker = HighlightTracker();
+  final _narration = NarrationService();
+
+  /// Read each stop's description aloud on arrival.
+  bool _autoNarrate = true;
 
   AppleMapController? _controller;
   StreamSubscription<Position>? _positionSub;
@@ -87,6 +92,7 @@ class _MapScreenState extends State<MapScreen> {
   void dispose() {
     _positionSub?.cancel();
     _highlightTimer?.cancel();
+    _narration.dispose();
     super.dispose();
   }
 
@@ -132,6 +138,7 @@ class _MapScreenState extends State<MapScreen> {
             _arrivalRadiusMeters) {
       HapticFeedback.heavyImpact();
       setState(() => _arrived = true);
+      if (_autoNarrate) _narration.narratePoi(progress.current, arrived: true);
     }
 
     // Things to point out along the way.
@@ -219,6 +226,7 @@ class _MapScreenState extends State<MapScreen> {
   }
 
   void _setProgress(TourProgress? progress) {
+    _narration.stop();
     setState(() {
       _progress = progress;
       _clearRoute();
@@ -243,6 +251,23 @@ class _MapScreenState extends State<MapScreen> {
     } else {
       _setProgress(progress.next());
     }
+  }
+
+  void _toggleAutoNarrate() {
+    setState(() => _autoNarrate = !_autoNarrate);
+    if (!_autoNarrate) _narration.stop();
+    ScaffoldMessenger.of(context)
+      ..hideCurrentSnackBar()
+      ..showSnackBar(
+        SnackBar(
+          content: Text(
+            _autoNarrate
+                ? "I'll read each stop aloud when you arrive."
+                : 'Stops won\'t be read aloud. Tap Listen to hear one.',
+          ),
+          duration: const Duration(seconds: 2),
+        ),
+      );
   }
 
   /// Ends the tour and returns to the home screen.
@@ -505,7 +530,21 @@ class _MapScreenState extends State<MapScreen> {
     final highlight = _activeHighlight;
     final highlightPoi = _poiById(highlight?.poiId);
     return Scaffold(
-      appBar: AppBar(title: Text(progress?.tour.name ?? 'Campus Map')),
+      appBar: AppBar(
+        title: Text(progress?.tour.name ?? 'Campus Map'),
+        actions: [
+          if (progress != null)
+            IconButton(
+              icon: Icon(
+                _autoNarrate ? Icons.record_voice_over : Icons.voice_over_off,
+              ),
+              tooltip: _autoNarrate
+                  ? 'Turn off reading stops aloud'
+                  : 'Read stops aloud on arrival',
+              onPressed: _toggleAutoNarrate,
+            ),
+        ],
+      ),
       body: Stack(
         children: [
           // Dragging the map hands camera control back to the user.
@@ -556,16 +595,23 @@ class _MapScreenState extends State<MapScreen> {
       floatingActionButton: _buildFab(progress),
       bottomNavigationBar: progress == null
           ? null
-          : TourPanel(
-              progress: progress,
-              distanceMeters: _remainingMeters(progress.current),
-              arrived: _arrived,
-              rerouting: _routing && _follower != null,
-              onPrevious: () => _setProgress(progress.previous()),
-              onNext: _next,
-              onDetails: () => _showPoi(progress.current),
-              onDirections: () => _openDirections(progress.current),
-              onEnd: _endTour,
+          : ValueListenableBuilder(
+              valueListenable: _narration.speakingId,
+              builder: (context, speakingId, _) => TourPanel(
+                progress: progress,
+                distanceMeters: _remainingMeters(progress.current),
+                arrived: _arrived,
+                rerouting: _routing && _follower != null,
+                speaking: speakingId == progress.current.id,
+                onPrevious: () => _setProgress(progress.previous()),
+                onNext: _next,
+                onDetails: () => _showPoi(progress.current),
+                onDirections: () => _openDirections(progress.current),
+                onListen: () => speakingId == progress.current.id
+                    ? _narration.stop()
+                    : _narration.narratePoi(progress.current),
+                onEnd: _endTour,
+              ),
             ),
     );
   }

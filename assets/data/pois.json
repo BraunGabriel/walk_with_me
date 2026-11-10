@@ -23,15 +23,15 @@
       "category": "academic",
       "latitude": 42.9620,
       "longitude": -85.8885,
-      "description": "The main library, with study spaces, a knowledge market for tutoring help, and a café."
+      "description": "The Mary Idema Pew Library is GVSU's main library on the Allendale campus, located near the Cook Carillon Tower. It's named for Mary Idema Pew and her family in recognition of their generous support of the university's capital campaigns. The library offers the Knowledge Market for peer help, a Digital Creator Lab, and study rooms. Its book collection is split between open shelves and an automated storage and retrieval system (ASRS) holding hundreds of thousands of books. It also has the GV Brew café. With late hours, plenty of quiet and group study space, and coffee on hand, it's one of the most popular places on campus for students to study."
     },
     {
-      "id": "zumberge-pond",
-      "name": "Zumberge Pond",
+      "id": "zumberge-hall",
+      "name": "Zumberge Hall",
       "category": "landmark",
       "latitude": 42.9640,
       "longitude": -85.8878,
-      "description": "A scenic pond in the center of campus, surrounded by walking paths."
+      "description": "James H. Zumberge Hall began as GVSU's original library, opening in 1969 and named for the university's first president, James H. Zumberge. It sits beside Zumberge Pond on the Allendale campus. Today it serves as the main administration building on the Allendale campus, bringing together about 15 university departments that used to be spread out. The building earned LEED Silver certification for its energy-efficient and sustainable design. Near the building's northwest corner is the Zumberge Garden, dedicated in 2014 in memory of Marilyn Zumberge, the president's wife. It overlooks the pond and the Kirkhof Center."
     },
     {
       "id": "mackinac",
@@ -61,8 +61,8 @@
       "id": "lubbers",
       "name": "Lubbers Stadium",
       "category": "athletics",
-      "latitude": 42.9589,
-      "longitude": -85.8917,
+      "latitude": 42.969109,
+      "longitude": -85.894704,
       "description": "Home of Laker football."
     }
   ]

@@ -4,7 +4,7 @@
       "id": "highlights",
       "name": "Campus Highlights",
       "description": "The must-see spots at the heart of the Allendale campus.",
-      "stops": ["kirkhof", "library", "carillon", "zumberge-pond", "kindschi", "mackinac"]
+      "stops": ["kirkhof", "library", "carillon", "zumberge-hall", "kindschi", "mackinac"]
     },
     {
       "id": "academics",
